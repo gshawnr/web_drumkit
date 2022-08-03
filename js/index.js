@@ -20,19 +20,47 @@ addEventListener("keydown", (e) => {
 function validateKey(key) {
   switch (key) {
     case "w":
-      return { key, audioPath: "../sounds/crash.mp3" };
+      return {
+        key,
+        audioPath:
+          "https://github.com/gshawnr/web_drumkit/blob/main/sounds/crash.mp3?raw=true",
+      };
     case "a":
-      return { key, audioPath: "../sounds/kick-bass.mp3" };
+      return {
+        key,
+        audioPath:
+          "https://github.com/gshawnr/web_drumkit/blob/main/sounds/kick-bass.mp3?raw=true",
+      };
     case "s":
-      return { key, audioPath: "../sounds/snare.mp3" };
+      return {
+        key,
+        audioPath:
+          "https://github.com/gshawnr/web_drumkit/blob/main/sounds/snare.mp3?raw=true",
+      };
     case "d":
-      return { key, audioPath: "../sounds/tom-1.mp3" };
+      return {
+        key,
+        audioPath:
+          "https://github.com/gshawnr/web_drumkit/blob/main/sounds/tom-1.mp3?raw=true",
+      };
     case "j":
-      return { key, audioPath: "../sounds/tom-2.mp3" };
+      return {
+        key,
+        audioPath:
+          "https://github.com/gshawnr/web_drumkit/blob/main/sounds/tom-2.mp3?raw=true",
+      };
     case "k":
-      return { key, audioPath: "../sounds/tom-3.mp3" };
+      return {
+        key,
+        audioPath:
+          "https://github.com/gshawnr/web_drumkit/blob/main/sounds/tom-3.mp3?raw=true",
+      };
     case "l":
-      return { key, audioPath: "../sounds/tom-4.mp3" };
+      return {
+        key,
+        audioPath:
+          "https://github.com/gshawnr/web_drumkit/blob/main/sounds/tom-4.mp3?raw=true",
+      };
     default:
       return;
   }
