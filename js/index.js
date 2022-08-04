@@ -4,7 +4,7 @@ for (let ele of document.querySelectorAll(".drum")) {
 
     if (validated) {
       playAudio(validated.audioPath);
-      changeText(validated.key);
+      showSelected(validated.key);
     }
   });
 }
@@ -13,7 +13,7 @@ addEventListener("keydown", (e) => {
   const validated = validateKey(e.key);
   if (validated) {
     playAudio(validated.audioPath);
-    changeText(validated.key);
+    showSelected(validated.key);
   }
 });
 
@@ -71,12 +71,10 @@ function playAudio(path) {
   audio.play();
 }
 
-function changeText(key) {
+function showSelected(key) {
   const ele = document.querySelector(`.${key}`);
-  if (ele) {
+  ele.classList.toggle("pressed");
+  setTimeout(() => {
     ele.classList.toggle("pressed");
-    setTimeout(() => {
-      ele.classList.toggle("pressed");
-    }, 300);
-  }
+  }, 300);
 }
